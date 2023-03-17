@@ -7,6 +7,7 @@ browser = "firefox"
 
 url = "https://www.heise.de"
 webdriver_url = "http://selenium_devcontainer-firefox-1:4444/wd/hub"
+webdriver_url = "http://webdriver:4444/wd/hub"
 
 
 def getRemoteDriver():

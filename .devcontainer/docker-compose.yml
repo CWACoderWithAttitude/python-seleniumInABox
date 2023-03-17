@@ -8,6 +8,8 @@ services:
     command: sleep infinity
     depends_on:
       - firefox
+    links:
+      - "firefox:webdriver"
 
   firefox:
     image: seleniarm/standalone-firefox:latest
