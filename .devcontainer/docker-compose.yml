@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  devcontainer:
+    image: mcr.microsoft.com/devcontainers/python:0-3.11
+    volumes:
+      - ../..:/workspaces:cached      
+    #network_mode: browser:chrome
+    command: sleep infinity
+    depends_on:
+      - firefox
+
+  firefox:
+    image: seleniarm/standalone-firefox:latest
+    ports:
+      - 4444:4444
+      - 7900:7900
+

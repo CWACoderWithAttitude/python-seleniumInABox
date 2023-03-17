@@ -1,0 +1,22 @@
+{
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "devcontainer",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "wesbos.theme-cobalt2",
+          "eamodio.gitlens",
+          "mhutchie.git-graph",
+          "rangav.vscode-thunder-client",
+          "editorconfig.editorconfig",
+          "shd101wyy.markdown-preview-enhanced",
+          "vscjava.vscode-java-pack",
+          "vscjava.vscode-maven",
+          "asciidoctor.asciidoctor-vscode"
+        ]
+      }
+    },
+    "postStartCommand": "pip install -r requirements.txt"
+  }
+  
