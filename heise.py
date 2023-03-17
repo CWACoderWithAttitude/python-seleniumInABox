@@ -36,7 +36,7 @@ if __name__ == "__main__":
         # driver = getProxyRemoteDriver()
         # driver = getProxyRemoteDriver()
         # print(f"heise.py: 2: driver: ${driver}")
-        # runTest()
+        runTest()
     finally:
         if (driver != None):
           driver.quit()
