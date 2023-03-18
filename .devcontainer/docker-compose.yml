@@ -4,7 +4,7 @@ services:
     image: mcr.microsoft.com/devcontainers/python:0-3.11
     volumes:
       - ../..:/workspaces:cached      
-      command: sleep infinity
+    command: sleep infinity
     depends_on:
       - firefox
     links:
