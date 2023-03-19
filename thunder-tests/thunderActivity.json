@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "ffad6e50-1903-4533-8358-6c24cb4208ac",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://selenium-hub:4444/wd/hub",
+    "url": "http://selenium-hub:4444/wd/hub",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-03-19T22:20:03.157Z",
+    "modified": "2023-03-19T22:20:03.157Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "77673564-c321-4ce8-ad70-ff56cfcf5eb5",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://selenium-hub:4444/api",
+    "url": "http://selenium-hub:4444/api",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-03-19T22:20:16.860Z",
+    "modified": "2023-03-19T22:20:16.860Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "0d1cc503-4bc7-41ea-8cdb-0c07af8941fa",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://selenium-hub:4444/grid/api/hub",
+    "url": "http://selenium-hub:4444/se/grid/newsessionqueue/queue",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-03-19T22:21:30.228Z",
+    "modified": "2023-03-19T22:25:10.862Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "55e3dfe0-9275-42c0-b2ab-9ca831f066ff",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://selenium-hub:4444/status",
+    "url": "http://selenium-hub:4444/status",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-03-19T22:22:26.915Z",
+    "modified": "2023-03-19T22:22:26.915Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]

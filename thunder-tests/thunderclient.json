@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "48a92fc9-c4a6-4768-8ed2-8774d2011846",
+    "colId": "c693ef49-02f2-41b3-ba9b-f837407dc981",
+    "containerId": "",
+    "name": "http://selenium-hub:4444/status",
+    "url": "http://selenium-hub:4444/status",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-03-19T22:27:19.964Z",
+    "modified": "2023-03-19T22:27:19.964Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]

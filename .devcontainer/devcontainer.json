@@ -11,8 +11,7 @@
           "rangav.vscode-thunder-client",
           "editorconfig.editorconfig",
           "shd101wyy.markdown-preview-enhanced",
-          "vscjava.vscode-java-pack",
-          "vscjava.vscode-maven",
+          "donjayamanne.python-extension-pack",
           "asciidoctor.asciidoctor-vscode"
         ]
       }

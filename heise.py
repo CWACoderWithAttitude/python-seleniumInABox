@@ -1,3 +1,4 @@
+import datetime
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
@@ -21,17 +22,22 @@ def getRemoteDriver(browser):
 
 def runTest(browser):
     driver.implicitly_wait(5)
-    #driver.get(url)
-    #print("Browser: {}: Title: <{}>".format(browser, driver.title))
-    # driver.save_screenshot("heise.png")
+    driver.get(url)
+    file =image_file(browser)
+    print("runTest: {}".format(file))
+    try:
+        driver.save_screenshot(file)
+    except:
+        print("runTest > problem saving screenshot - continue anyways...")
+    finally:
+        print("runTest > finally")
     assert "heise" in driver.title
     image_file(browser)
-import datetime
 
 def image_file(browser):
     today = datetime.date.today()
     file = "{}-{}.png".format(today, browser)
-    print("image_file: {}".format(file))
+    return file
 
 if __name__ == "__main__":
     driver = None
@@ -39,8 +45,8 @@ if __name__ == "__main__":
         print("heise.py: 1")
         for browser in browsers:
             driver = getRemoteDriver(browser)
-            image_file(browser)
-            #runTest(browser)
+            #image_file(browser)
+            runTest(browser)
     finally:
         if (driver != None):
           driver.quit()
