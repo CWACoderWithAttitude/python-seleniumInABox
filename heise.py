@@ -8,6 +8,7 @@ browser = "firefox"
 url = "https://www.heise.de"
 webdriver_url = "http://selenium_devcontainer-firefox-1:4444/wd/hub"
 webdriver_url = "http://webdriver:4444/wd/hub"
+webdriver_url = "http://selenium-hub:4444/wd/hub"
 
 
 def getRemoteDriver():
@@ -22,7 +23,7 @@ def getRemoteDriver():
 
 def runTest():
     driver.implicitly_wait(5)
-    driver.maximize_window()  # Note: driver.maximize_window does not work on Linux selenium version v2, instead set window size and window position like driver.set_window_position(0,0) and driver.set_window_size(1920,1080)
+    #driver.maximize_window()  # Note: driver.maximize_window does not work on Linux selenium version v2, instead set window size and window position like driver.set_window_position(0,0) and driver.set_window_size(1920,1080)
     driver.get(url)
     print("Title: <"+driver.title+">")
     driver.save_screenshot("heise.png")
