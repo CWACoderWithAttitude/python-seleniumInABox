@@ -4,14 +4,14 @@ services:
     image: mcr.microsoft.com/devcontainers/python:0-3.11
     volumes:
       - ../..:/workspaces:cached      
-      command: sleep infinity
+    command: sleep infinity
     depends_on:
-      - firefox
+      - chrome
     links:
-      - "firefox:webdriver"
+      - "chrome:webdriver"
 
-  firefox:
-    image: seleniarm/standalone-firefox:latest
+  chrome:
+    image: seleniarm/standalone-chromium:latest
     ports:
       - 4444:4444
       - 7900:7900
