@@ -4,6 +4,7 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
 browser = "firefox"
+browser = "chrome"
 
 url = "https://www.heise.de"
 webdriver_url = "http://selenium_devcontainer-firefox-1:4444/wd/hub"
