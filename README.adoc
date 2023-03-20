@@ -1,0 +1,16 @@
+= Selenium in a Box
+
+Selenium Grid runs a number of browwers and versions. You may remove browser nodes or add add browser nodes to the grid - official https://hub.docker.com/u/selenium[selenium node images can be found here]. A http://localhost:4444/ui#[web interface] is provided to see the current status.
+image::selenium_grid.png[alt=Selenium GRID]
+
+In case you just want to know which browsers are availabe you could use this query statement:
+```shell
+vscode ➜ /workspaces/selenium (grid) $ curl -s http://selenium-hub:4444/status | jq '.value.nodes[].slots[].stereotype | .browserName+":"+.browserVersion'
+"MicrosoftEdge:110.0"
+"MicrosoftEdge:109.0"
+"chrome:109.0"
+"firefox:110.0"
+"chrome:110.0"
+vscode ➜ /workspaces/selenium (grid) $
+```
+
