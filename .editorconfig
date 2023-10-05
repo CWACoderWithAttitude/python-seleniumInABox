@@ -12,7 +12,7 @@ trim_trailing_whitespace = true
 # Do not add the following without confirming that nullable warnings and errors are still honored
 # generated_code = true
 
-[*.{py, java}]
+[*.{py, java, json}]
 indent_style = space
 indent_size = 2
 

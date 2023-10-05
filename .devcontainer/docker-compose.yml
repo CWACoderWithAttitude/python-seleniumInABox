@@ -14,8 +14,18 @@ services:
     #links:
     #  - "firefox:webdriver"
 
-  chrome:
-    image: selenium/node-chrome:4.8.1-20230306
+#   chrome:
+#     image: selenium/node-chrome:4.8.1-20230306
+#     shm_size: 2gb
+#     depends_on:
+#       - selenium-hub
+#     environment:
+#       - SE_EVENT_BUS_HOST=selenium-hub
+#       - SE_EVENT_BUS_PUBLISH_PORT=4442
+#       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+
+  chrome109.0:
+    image: selenium/node-chrome:$CHROME_VERSION
     shm_size: 2gb
     depends_on:
       - selenium-hub
@@ -24,16 +34,6 @@ services:
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
 
-  chrome109.0:
-    image: selenium/node-chrome:109.0
-    shm_size: 2gb
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      
   edge:
     image: selenium/node-edge:4.8.1-20230306
     shm_size: 2gb

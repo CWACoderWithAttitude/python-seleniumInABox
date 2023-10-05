@@ -5,17 +5,18 @@
     "customizations": {
       "vscode": {
         "extensions": [
-          "wesbos.theme-cobalt2",
-          "eamodio.gitlens",
-          "mhutchie.git-graph",
-          "rangav.vscode-thunder-client",
-          "editorconfig.editorconfig",
-          "shd101wyy.markdown-preview-enhanced",
-          "donjayamanne.python-extension-pack",
-          "asciidoctor.asciidoctor-vscode"
-        ]
+			"wesbos.theme-cobalt2",
+			"eamodio.gitlens",
+			"mhutchie.git-graph",
+			"rangav.vscode-thunder-client",
+			"editorconfig.editorconfig",
+			"shd101wyy.markdown-preview-enhanced",
+			"donjayamanne.python-extension-pack",
+			"asciidoctor.asciidoctor-vscode",
+			"ms-azuretools.vscode-docker",
+			"ms-python.black-formatter"
+		]
       }
     },
-    "postStartCommand": "pip install -r requirements.txt"
-  }
-  
+    "postCreateCommand": "pip install -r requirements.txt"
+}
